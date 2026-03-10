@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a9bd85d3977038439982fd06f30273a, type: 3}
   m_Name: EnemyAIConfig
   m_EditorClassIdentifier: 
-  mode: 1
+  mode: 5
   patrolMode: 0
   waitTimeAtWaypoint: 0
   moveSpeed: 8
