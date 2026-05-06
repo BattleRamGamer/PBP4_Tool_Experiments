@@ -32,6 +32,13 @@ public class TargetAimer : MonoBehaviour
         _verticalSlider.DOValue(1f, sliderMoveDuration).SetLoops(-1, LoopType.Yoyo).SetEase(Ease.InOutSine);
     }
 
+    private void OnDestroy()
+    {
+        _horizontalSlider.DOKill();
+        _verticalSlider.DOKill();
+        _dart.DOKill();
+    }
+
     void Update()
     {
         
