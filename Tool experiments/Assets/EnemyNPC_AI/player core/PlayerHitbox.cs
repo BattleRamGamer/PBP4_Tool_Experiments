@@ -16,7 +16,7 @@ public class PlayerHitbox : MonoBehaviour
     {
         int finalDamage = baseDamage * damageMultiplier;
         receiver.TakeDamage(finalDamage, attacker);
-        Debug.Log($"[PlayerHitbox] {hitboxType} hit: {baseDamage} x{damageMultiplier} = {finalDamage}");
+        //Debug.Log($"[PlayerHitbox] {hitboxType} hit: {baseDamage} x{damageMultiplier} = {finalDamage}");
     }
 }
 }

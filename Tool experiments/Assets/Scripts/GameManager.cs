@@ -17,7 +17,8 @@ public class GameManager : MonoBehaviour
     {
         if (lockCursor)
         {
-            Cursor.lockState = CursorLockMode.Locked;
+            SetCursorLock(true);
+            //Cursor.lockState = CursorLockMode.Locked;
         }
     }
 
@@ -25,13 +26,26 @@ public class GameManager : MonoBehaviour
     {
         if (isGameOver)
         {
-            Cursor.lockState = CursorLockMode.None;
+            SetCursorLock(false);
+            //Cursor.lockState = CursorLockMode.None;
         }
     }
 
     public void GameIsOver()
     {
         isGameOver = true;
+    }
+
+    public void SetCursorLock(bool pLockCursor)
+    {
+        if (pLockCursor)
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+        }
+        else
+        {
+            Cursor.lockState = CursorLockMode.None;
+        }
     }
 
     public void SwitchToScene()

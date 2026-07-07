@@ -17,7 +17,7 @@ public class PlayerDamageReceiver : MonoBehaviour, IDamageable
     public void TakeDamage(int amount, Transform attacker = null)
     {
         health.TakeDamage(amount);
-        Debug.Log($"{gameObject.name} took {amount} damage from {attacker?.name ?? "unknown"}");
+        //Debug.Log($"{gameObject.name} took {amount} damage from {attacker?.name ?? "unknown"}");
     }
 }
 }

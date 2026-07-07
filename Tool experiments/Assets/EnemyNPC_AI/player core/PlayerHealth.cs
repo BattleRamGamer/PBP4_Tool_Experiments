@@ -28,7 +28,7 @@ public class PlayerHealth : MonoBehaviour
             gameObject.SetActive(false);
         }
         currentHealth = Mathf.Max(currentHealth, 0);
-        Debug.Log($"Player took {amount} damage. HP: {currentHealth}");
+        //Debug.Log($"Player took {amount} damage. HP: {currentHealth}");
 
         if (currentHealth == 0)
             Die();
@@ -41,7 +41,7 @@ public class PlayerHealth : MonoBehaviour
     }
     private void Die()
     {
-        Debug.Log("Player Died");
+        //Debug.Log("Player Died");
         // Add death animation, disable controls, respawn, etc.
         Destroy(gameObject);
     }

@@ -7,7 +7,6 @@ public class DotweenDart : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Collision " + other.name);
         if (!isReady) { return; }
 
         if (other.TryGetComponent(out DotweenTargetCircle target))

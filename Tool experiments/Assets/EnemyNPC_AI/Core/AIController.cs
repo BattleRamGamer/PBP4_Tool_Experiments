@@ -179,7 +179,7 @@ namespace SuperHorizon.EnemyNPCai
             if (currentState == newState) return;
 
             currentState = newState;
-            Debug.Log($"🧠 [AIController] Switched to: {newState}", this);
+            //Debug.Log($"🧠 [AIController] Switched to: {newState}", this);
 
             switch (newState)
             {
@@ -345,7 +345,7 @@ namespace SuperHorizon.EnemyNPCai
             if (NavMesh.SamplePosition(candidate, out NavMeshHit hit, 3f, NavMesh.AllAreas))
             {
                 agent.SetDestination(hit.position);
-                Debug.Log("🔄 [AIController] Path blocked – repositioning...");
+                //Debug.Log("🔄 [AIController] Path blocked – repositioning...");
             }
         }
 
